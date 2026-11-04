@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOID — The Machine Age Has Begun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameWrap">
+    <canvas id="gameCanvas" width="1280" height="720"></canvas>
+
+    <div id="hud">
+      <div class="hud-left">
+        <div class="brand">VOID</div>
+        <div id="levelName">ACT 1 — NEXUS CITY</div>
+        <div class="bar-row"><span>HP</span><div class="bar"><div id="healthBar"></div></div><b id="healthText">100</b></div>
+      </div>
+      <div class="hud-right">
+        <div id="livesText">LIVES: 3</div>
+        <div id="objective">Reach the extraction point.</div>
+      </div>
+    </div>
+
+    <div id="message"></div>
+
+    <div id="screen" class="hidden">
+      <div class="screen-card">
+        <h1 id="screenTitle">VOID</h1>
+        <p id="screenText"></p>
+        <button id="screenButton">START</button>
+      </div>
+    </div>
+
+    <div id="controls">
+      <span>A/D or ←/→ Move</span>
+      <span>W / ↑ / Space Jump</span>
+      <span>Q Dash</span>
+      <span>J Fire</span>
+      <span>K Lightning</span>
+      <span>L Explosion</span>
+      <span>E Robot Restraint (VOID only)</span>
+  <span>R Void Combo (15–20 hits, 3 damage each)</span>
+  <span>T Void Crush (half target current HP)</span>
+  <span>U Counter Arm (activate before enemy hits)</span>
+      <span>1–4 Change Character + Unique Abilities</span>
+      <span>1 Void / 2 Alex / 3 Mia / 4 Kai</span>
+      <span>ESC Pause</span>
+    </div>
+  </div>
+
+  <script src="sprites.js"></script>
+  <script src="player.js"></script>
+  <script src="enemy.js"></script>
+  <script src="powers.js"></script>
+  <script src="map.js"></script>
+  <script src="level.js"></script>
+  <script src="ui.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

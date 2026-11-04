@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:#050711;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow:hidden}
+body{display:flex;align-items:center;justify-content:center}
+#gameWrap{position:relative;width:min(1280px,100vw);aspect-ratio:16/9;background:#070914;overflow:hidden;box-shadow:0 0 60px #000}
+canvas{display:block;width:100%;height:100%;background:#080b18}
+#hud{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:18px 24px;background:linear-gradient(#050711dd,transparent);pointer-events:none;text-shadow:0 2px 8px #000}
+.brand{font-size:30px;font-weight:900;letter-spacing:8px;color:#c9a2ff}
+#levelName{font-size:14px;letter-spacing:3px;color:#b9c7ff;margin:2px 0 12px}
+.bar-row{display:flex;align-items:center;gap:8px;font-size:12px}
+.bar{width:190px;height:12px;border:1px solid #7b68b8;background:#15182a}
+#healthBar{height:100%;width:100%;background:linear-gradient(90deg,#a42cff,#ef63ff)}
+.hud-right{text-align:right;font-size:14px;letter-spacing:2px}
+#objective{margin-top:8px;color:#aeb8d8;letter-spacing:1px}
+#message{position:absolute;left:50%;top:82%;transform:translate(-50%,-50%);font-size:22px;letter-spacing:2px;color:#fff;text-shadow:0 0 16px #a83cff;opacity:0;transition:.2s;pointer-events:none}
+#screen{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#03040bdd;z-index:5}
+#screen.hidden{display:none}
+.screen-card{width:min(650px,90%);padding:42px;border:1px solid #8c52ff;background:linear-gradient(145deg,#0d1022f5,#090b16f5);box-shadow:0 0 50px #5f22aa55;text-align:center}
+.screen-card h1{font-size:52px;letter-spacing:8px;margin:0 0 16px;color:#d6b8ff}
+.screen-card p{color:#c5cbe0;line-height:1.7;font-size:17px}
+button{margin-top:20px;padding:13px 32px;background:#7c36c9;color:white;border:1px solid #d8b8ff;cursor:pointer;font-weight:bold;letter-spacing:2px}
+button:hover{background:#a052f0}
+#controls{position:absolute;bottom:0;left:0;right:0;padding:10px 18px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;font-size:11px;color:#98a1c0;background:linear-gradient(transparent,#050711dd);pointer-events:none}
